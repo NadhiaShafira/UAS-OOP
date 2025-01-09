@@ -125,3 +125,36 @@ Ini adalah definisi dari metode `hitung_total`. Metode ini adalah bagian dari se
 2. ```python
 total_harga = sum(gamis['harga'] for gamis in self.data.get_gamis())
 ```
+ kode ini berfungsi untuk menghitung total harga dari semua gamis.
+
+3. ```python
+return total_harga
+```
+* `return total_harga`: Setelah menghitung `total harga`, metode ini mengembalikan nilai total_harga. Nilai ini dapat digunakan oleh bagian lain dari program untuk mengetahui total pengeluaran untuk semua gamis yang ada.
+
+## 3. Metode `proses_pembelian`
+
+```python
+def proses_pembelian(self):
+        while True:
+            nama_gamis = input("Masukkan nama gamis (atau ketik 'selesai' untuk mengakhiri): ")
+            if nama_gamis.lower() == 'selesai':
+                break
+            harga_gamis = int(input("Masukkan harga gamis: "))
+            self.data.tambah_gamis(nama_gamis, harga_gamis)
+```
+
+* Fungsi Metode
+metode ini memungkinkan pengguna untuk memasukkan informasi tentang gamis yang dibeli secara interaktif hingga mereka memilih untuk mengakhiri proses.
+
+* Validasi
+
+Validasi dalam kode` proses_pembelian(self)`dapat dilakukan untuk memastikan bahwa input yang diberikan oleh pengguna adalah valid dan sesuai dengan yang diharapkan.
+1. Validasi Nama Gamis:
+   * Pastikan nama gamis tidak kosong. Jika pengguna hanya menekan Enter tanpa memasukkan nama, program harus meminta input ulang.
+2. Validasi Harga Gamis:
+   * Pastikan harga yang dimasukkan adalah angka yang valid. Jika pengguna memasukkan nilai yang tidak dapat diubah menjadi integer (misalnya, huruf atau simbol), program harus       menangani kesalahan dan meminta input ulang.
+3. Menangani Input 'selesai':
+   * Pastikan bahwa ketika pengguna mengetik 'selesai', program keluar dari loop dengan benar tanpa meminta input lebih lanjut.
+
+# Hasil Output
