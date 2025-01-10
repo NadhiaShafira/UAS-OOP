@@ -158,4 +158,4 @@ Validasi dalam kode` proses_pembelian(self)`dapat dilakukan untuk memastikan bah
    * Pastikan bahwa ketika pengguna mengetik 'selesai', program keluar dari loop dengan benar tanpa meminta input lebih lanjut.
 
 # Hasil Output
-![foto](https://github.com/NadhiaShafira/UAS-OOP/blob/b789e963ee1bdfc513e062ab735e7eaad1e9cc73/Gambar%20WhatsApp%202025-01-07%20pukul%2018.02.35_54d18fb8.jpg) 
+![foto]
